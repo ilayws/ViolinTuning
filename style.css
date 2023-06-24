@@ -1,0 +1,74 @@
+
+.note {
+    background-color: #10a870;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 80px;
+    height: 80px;
+    margin: 4px 4px;
+    border-radius: 100%;
+}
+
+.error {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    margin: 4px 4px;
+}
+
+.pressed {
+    background-color: #124765;
+}
+
+.note:hover {
+    background-color: #12968d;
+}
+
+
+.pitchChange {
+    width: 80px;
+    height: 40px;
+    margin: 4px 4px;
+}
+
+.arrow {
+    border: solid black;
+    background-color: transparent;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.arrow:hover {
+    background-color: transparent;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+#notes {
+    margin-top: 140pt;
+}

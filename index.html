@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuning Practice</title>
+    <script src="lib/p5.js"></script>
+    <script src="lib/addons/p5.sound.js"></script>
+    <script src="OscSeries.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="tune()">Tune</button>
+    <button onclick="detune()">Detune</button>
+    <button onclick="tuneA()">A440</button>
+    <button onclick="showError()">Show Error</button>
+    <center id="notes">
+        <div>
+            <p id="Err0" class="error"></p>
+            <p id="Err1" class="error"></p>
+            <p id="Err2" class="error"></p>
+        </div>
+        <div>
+            <button class="pitchChange" onclick="changePitch(0, true)"><p><i class="arrow up"></i></p></button>
+            <button class="pitchChange" onclick="changePitch(1, true)"><p><i class="arrow up"></i></p></button>
+            <button class="pitchChange" onclick="changePitch(2, true)"><p><i class="arrow up"></i></p></button>
+            <button class="pitchChange" onclick="changePitch(3, true)"><p><i class="arrow up"></i></p></button>
+        </div>
+        <div>
+            <button id="0" class="note" onclick="toggleSound(0)">G</button>
+            <button id="1" class="note" onclick="toggleSound(1)">D</button>
+            <button id="2" class="note" onclick="toggleSound(2)">A</button>
+            <button id="3" class="note" onclick="toggleSound(3)">E</button>
+        </div>
+        <div>
+            <button class="pitchChange" onclick="changePitch(0, false)"><p><i class="arrow down"></i></p></button>
+            <button class="pitchChange" onclick="changePitch(1, false)"><p><i class="arrow down"></i></p></button>
+            <button class="pitchChange" onclick="changePitch(2, false)"><p><i class="arrow down"></i></p></button>
+            <button class="pitchChange" onclick="changePitch(3, false)"><p><i class="arrow down"></i></p></button>
+        </div>
+
+       
+    </center>
+</body>
+</html>
